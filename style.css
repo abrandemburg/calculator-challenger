@@ -1,0 +1,85 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: #eeeeee;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#result {
+    overflow: hidden;
+    height: 80px;
+    font-size: 4rem;
+    text-align: right;
+    background-color: white;
+    border: 10px solid #eeeeee;
+    text-align: center;
+}
+
+.cell-container {
+    height: 300px;
+    padding: 10px;
+    border: 1px solid #eeeeee;
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.cell-container div {
+    width: 112.5px;
+    height: 68px;
+    background-color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.cell-container div:hover {
+    background-color: #a5a5a5;
+    border: 1px solid black;
+    width: 110.5px;
+    height: 66px;
+}
+
+.controls {
+    font-size: 2rem;
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.controls div {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-width: 5px;
+    border-color: #eeeeee;
+}
+
+.controls div:hover {
+    background-color: #a5a5a5;
+    border: 1px solid black;
+}
+
+#reset {
+    flex: 1;
+    border-right-style: solid;
+}
+
+#eraser {
+    flex: 1;
+    border-left-style: solid;
+}
